@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 export default function Pagination({ paginate, page }) {
 
-    const endNum = page + 10
+    const endNum = page + 9
     let startNum = page
 
     const btns = []

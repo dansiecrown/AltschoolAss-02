@@ -1,12 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ErrorPage() {
 
 
 
     return (
-        <div>
-            <h1>404 - Page not found</h1>
+        <div className="Error">
+            <div className="contain">
+                <p>Error 404</p>
+                <h1>You are lost!</h1>
+
+                <Link to="/" className="btn">Go Home</Link>
+            </div>
         </div>
     )
 }
