@@ -1,38 +1,123 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+
+.App{
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  padding: 1.5em;
+  color: black;
+  background-color: #f5f5f5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: orange;
+}
+
+.about, .contact{
+  height: 85vh;
+  display: flex;
+}
+
+.contain, .container{
+  margin: auto;
+}
+
+.container{
+  width: 100%;
+}
+
+.about p{
+  width: 70%;
+  margin: auto;
+}
+.wrapper{
+  height: 85vh;
+  display: flex
+}
+.card{
+  margin:auto;
+  display: flex;
+  width: 80%;
+}
+
+.card img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card p{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.btn{
+  margin: auto;
+  border: none;
+  background-color: black;
+  padding: 1em;
   color: white;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.numbers{
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card .contain{
+  padding: 3em;
+  box-shadow: 2px 2px 10px #88888881;
+  border-radius: 20px;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.card .prev{
+  margin-right: 10em;
+}
+.next{
+  margin-left: 10em;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.pagination button{
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  margin: 0 0.5em;
+  border-radius: 5px;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: orange;
 }
