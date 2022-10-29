@@ -8,6 +8,8 @@ export default function Home() {
 
             <Nav />
             <Outlet />
+            <h1>Welcome to my assignment page!</h1>
+            <p>Click any of the link above to Navigate to any section of the page;</p>
         </div>
     )
 }

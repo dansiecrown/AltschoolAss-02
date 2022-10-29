@@ -151,6 +151,12 @@ button:hover{
   margin-top: 50px;
 }
 
+.my-btn{
+  color: orange;
+  margin-top: 200px;
+
+}
+
 @media screen and (max-width: 768px){
   .card .prev{
     margin-right: -20px;
